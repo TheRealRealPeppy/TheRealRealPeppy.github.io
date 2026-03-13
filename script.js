@@ -87,7 +87,7 @@ const galleryItems = [
     {
         image: 'images/image21.jpg',
         title: 'Azzy, local deer',
-        description: 'First real furry creation, very happy with the result, was for the birthday of a friend, the time invested was not worth the meager compliments on this one'
+        description: 'First real furry creation, very happy with the result, was for the birthday of a friend, I like randomly drawing for my friends birthdays, even if it is for people that will likely not reciprocate anything for mine'
     },
     {
         image: 'images/image22.jpg',
@@ -152,7 +152,7 @@ const galleryItems = [
     {
         image: 'images/IMG_0601.png',
         title: 'Garde',
-        description: 'Done that just after a friend gave me some new pencils, I was sold'
+        description: 'Done that just after a friend gave me some new pencils to use on my app, I was sold'
     },
     {
         image: 'images/IMG_0603.png',
@@ -167,12 +167,12 @@ const galleryItems = [
     {
         image: 'images/Untitled_Artwork2.png',
         title: 'Doot',
-        description: 'Doot Doot, oc of a friend'
+        description: 'Doot Doot, OC of a friend'
     },
     {
         image: 'images/Untitled_Artwork5.png',
         title: 'Wisp portrait',
-        description: 'Not great, worth a try though'
+        description: 'Not great, worth the try though'
     },
 ]
 
