@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio - Pepson</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Pepson's Repo</div>
+            <ul class="nav-links">
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#games" class="nav-link">Games</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">My Work</h2>
+            <h3 style="text-align: center; color: #00d4ff; margin-bottom: 2rem;">They are NOT in order of creation, so expect jump of quality</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image-47.jpg" alt="BroodMother" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>BroodMother</h3>
+                        <p>They've recently announced a starcraft wargame so I felt like drawing a zerg unit I like</p>
+                        <button class="view-btn" onclick="openModal(0)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image0-37.jpg" alt="Rey Dau (attempt 4)" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Rey Dau (attempt 4)</h3>
+                        <p>I still struggle drawing that guy, he has a very cool design that I'd love to be able to nail down</p>
+                        <button class="view-btn" onclick="openModal(1)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image0.jpg" alt="12.1 architech" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>12.1 architech</h3>
+                        <p>first drawing that I felt proud making, even if it very inspired from and existing art</p>
+                        <button class="view-btn" onclick="openModal(2)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image1.jpg" alt="Eido" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Eido</h3>
+                        <p>OC of a friend, felt like practicing clothe</p>
+                        <button class="view-btn" onclick="openModal(3)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image10.jpg" alt="Hornet" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Hornet</h3>
+                        <p>Was made after a practice at cloth physics, I've learned to be a bit more considerate of shadow with this one</p>
+                        <button class="view-btn" onclick="openModal(4)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image11.jpg" alt="Quematrice" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Quematrice</h3>
+                        <p>Wasn't happy with it, colours are quite muted</p>
+                        <button class="view-btn" onclick="openModal(5)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image12.jpg" alt="Mizutsune" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Mizutsune</h3>
+                        <p>I like the design of that creature, one of the few instance of mizu not being turned into r34</p>
+                        <button class="view-btn" onclick="openModal(6)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image13.jpg" alt="Saryn" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Saryn</h3>
+                        <p>From that point on I learned a very sketchy drawing style, sadly it's not an original art</p>
+                        <button class="view-btn" onclick="openModal(7)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image14.jpg" alt="Oraxia" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Oraxia</h3>
+                        <p>I like angular and exaggerated angles for those characters</p>
+                        <button class="view-btn" onclick="openModal(8)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image15.jpg" alt="Team Snakemouth" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Team Snakemouth</h3>
+                        <p>I struggled more with the top panel</p>
+                        <button class="view-btn" onclick="openModal(9)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image16.jpg" alt="Queen Elizant II" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Queen Elizant II</h3>
+                        <p>Turns out she does not betray you, I did betray her with terrible perspective</p>
+                        <button class="view-btn" onclick="openModal(10)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image17.jpg" alt="Nore" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Nore</h3>
+                        <p>Evil critter birthday, don't feed</p>
+                        <button class="view-btn" onclick="openModal(11)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image18.jpg" alt="Wisp sitted" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Wisp sitted</h3>
+                        <p>Not original, still like what I did with the colours</p>
+                        <button class="view-btn" onclick="openModal(12)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image19.jpg" alt="Hornet, silk queen" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Hornet, silk queen</h3>
+                        <p>Not original, learned a few things from it</p>
+                        <button class="view-btn" onclick="openModal(13)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image2.jpg" alt="Zerg queen" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Zerg queen</h3>
+                        <p>More of a reproduction of something already done, don't remember much</p>
+                        <button class="view-btn" onclick="openModal(14)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image20.jpg" alt="My hunter" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>My hunter</h3>
+                        <p>Just beated prood of a hero in wilds, felt like celebrating</p>
+                        <button class="view-btn" onclick="openModal(15)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image21.jpg" alt="Azzy, local deer" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Azzy, local deer</h3>
+                        <p>First real furry creation, very happy with the result, was for the birthday of a friend, the time invested was not worth the meager compliments on this one</p>
+                        <button class="view-btn" onclick="openModal(16)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image22.jpg" alt="Mag" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Mag</h3>
+                        <p>Bit more conflicted about this one, the clothing probably needed to be have a bit more details</p>
+                        <button class="view-btn" onclick="openModal(17)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image3.jpg" alt="Zergling" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Zergling</h3>
+                        <p>Regular critter, not much to say about it</p>
+                        <button class="view-btn" onclick="openModal(18)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image4.jpg" alt="Yaerli" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Yaerli</h3>
+                        <p>The day I learned that humanoid have their waist far closer to their chest than I thought</p>
+                        <button class="view-btn" onclick="openModal(19)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image6.jpg" alt="Canoptek" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Canoptek</h3>
+                        <p>Very unhappy about this one, almost made me quit</p>
+                        <button class="view-btn" onclick="openModal(20)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image7.jpg" alt="Delivery" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Delivery</h3>
+                        <p>Last minute creation, pretty terrible</p>
+                        <button class="view-btn" onclick="openModal(21)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image8.jpg" alt="Chillet" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Chillet</h3>
+                        <p>V2 version, the first was very sad to look at</p>
+                        <button class="view-btn" onclick="openModal(22)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/image9.jpg" alt="Mizu Pal" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Mizu Pal</h3>
+                        <p>Looks fancy, too smooth though</p>
+                        <button class="view-btn" onclick="openModal(23)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/IMG_0589.png" alt="Oraxia B&W" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Oraxia B&W</h3>
+                        <p>I like her, though I went too far on effects</p>
+                        <button class="view-btn" onclick="openModal(24)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/IMG_0590.png" alt="Tarantriss <3" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Tarantriss <3</h3>
+                        <p>Love the energy I gave to this one, was the first art I was really proud of sharing everywhere</p>
+                        <button class="view-btn" onclick="openModal(25)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/IMG_0592.png" alt="Mizutsune sleepy" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Mizutsune sleepy</h3>
+                        <p>Very purple, nothing much to say</p>
+                        <button class="view-btn" onclick="openModal(26)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/IMG_0594.png" alt="Yareli 2" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Yareli 2</h3>
+                        <p>Newer style, quite happy with this one, took a lot of time though</p>
+                        <button class="view-btn" onclick="openModal(27)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/IMG_0600.png" alt="Box" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Box</h3>
+                        <p>it's just a box with terrible perspective</p>
+                        <button class="view-btn" onclick="openModal(28)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/IMG_0601.png" alt="Garde" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Garde</h3>
+                        <p>Done that just after a friend gave me some new pencils, I was sold</p>
+                        <button class="view-btn" onclick="openModal(29)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/IMG_0603.png" alt="Resting a web" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Resting a web</h3>
+                        <p>Tried to be fancy with cloting</p>
+                        <button class="view-btn" onclick="openModal(30)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/Untitled_Artwork.png" alt="Beginning of the end" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Beginning of the end</h3>
+                        <p>I belive I wanted to impress a friend with this one, it only made me spiral down, this piece represents a starting point of a cycle of self disappointment</p>
+                        <button class="view-btn" onclick="openModal(31)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/Untitled_Artwork2.png" alt="Doot" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Doot</h3>
+                        <p>Doot Doot, oc of a friend</p>
+                        <button class="view-btn" onclick="openModal(32)">View More</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration">
+                    <img src="images/Untitled_Artwork5.png" alt="Wisp portrait" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Wisp portrait</h3>
+                        <p>Not great, worth a try though</p>
+                        <button class="view-btn" onclick="openModal(33)">View More</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="games" class="games-section">
+        <div class="container">
+            <h2 class="section-title">Mods & Games</h2>
+            <h3 style="text-align: center; color: #00d4ff; margin-bottom: 2rem;">I'm also a modder in several game, I try not to attach myself too deep in those to keep some freedom and experience new things.</h3>
+            <div class="games-grid">
+                <div class="game-card">
+                    <img src="mods/game-1.jpg" alt="Garry's Mod" class="game-image">
+                    <div class="game-info">
+                        <h3>Garry's Mod</h3>
+                        <p>Worked extensively in a French Server community, with very good understanding of the Helix framework.</p>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="mods/game-2.jpg" alt="Starcraft II" class="game-image">
+                    <div class="game-info">
+                        <h3>Starcraft II</h3>
+                        <p>I've helped create some ambitious arcade map, did dabble in some 3d modelling for that purpose.</p>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="mods/game-3.jpg" alt="FTL" class="game-image">
+                    <div class="game-info">
+                        <h3>FTL</h3>
+                        <p>I am part of the dev team of FTL: Multiversen and I've worked extensively on the modding framework of that game, Hyperspace.</p>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="mods/game-4.webp" alt="Helldivers II" class="game-image">
+                    <div class="game-info">
+                        <h3>Helldivers II</h3>
+                        <p>I've pioneered some new tools to be able to create cursed experience, and I fit that's a good definition of how I work.</p>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="mods/game-5.jpg" alt="Stellaris" class="game-image">
+                    <div class="game-info">
+                        <h3>Stellaris</h3>
+                        <p>The work I did there was just cursed stuff, I did not push any boundaries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-info">
+            <h2 id="modalTitle">Artwork Title</h2>
+            <p id="modalDescription">Description of your artwork goes here.</p>
+        </div>
+        <div class="modal-nav">
+            <button class="modal-btn" onclick="prevImage()"> Previous</button>
+            <button class="modal-btn" onclick="nextImage()">Next </button>
+        </div>
+        <div style="text-align: center; color: #b0b0b0; font-size: 0.85rem; margin-top: 1.5rem; opacity: 0.8;">
+             Tip: Use arrow keys, scroll wheel, or buttons to navigate
+        </div>
+    </div>
+
+    
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I do mods in my spare time, and I work in the cybersecurity field. I felt like being an artist so I could create things I like and can share with people.
+                    </p>
+                    <p>
+                        I've started in December 2025, I'm still learning a lot.
+                    </p>
+                    <div class="skills">
+                        <h3>Skills & Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">ProCreate</span>
+                            <span class="skill-tag">The app, not the action</span>
+                            <span class="skill-tag">Illustration</span>
+                            <span class="skill-tag">Character</span>
+                            <span class="skill-tag">Bugs</span>
+                            <span class="skill-tag">Gender stuff</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <p>At least</p>
+                        <h3>one</h3>
+                        <p>Artwork Created</p>
+                    </div>
+                    <div class="stat">
+                        <h3>No</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat">
+                        <p>Shenanigans:</p>
+                        <h3>Countless</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Pepson. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
